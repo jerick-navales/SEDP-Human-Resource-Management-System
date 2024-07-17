@@ -1,0 +1,60 @@
+body {
+    background-color: #f8f9fa; /* Background color for the body */
+}
+
+.container {
+    background-color: #ffffff; /* White background for the container */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Adjust vertical spacing between rows */
+}
+
+.table th,
+.table td {
+    padding-top: 10px; /* Adjust top padding of table cells */
+    padding-bottom: 10px; /* Adjust bottom padding of table cells */
+    vertical-align: middle; /* Center content vertically in table cells */
+}
+
+.table-actions {
+    text-align: center;
+}
+
+.table-actions .btn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 0.8rem; /* Decreased font size */
+    border: none; /* Remove button border */
+    background: none; /* Remove button background */
+}
+
+.vertical-align {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.search-sort-add {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Align items vertically */
+}
+
+.search-sort-add .form-control {
+    width: 100%; /* Take full width */
+}
+
+hr {
+    border-top: 1px solid #ced4da; /* Adjust thickness and color of hr */
+}

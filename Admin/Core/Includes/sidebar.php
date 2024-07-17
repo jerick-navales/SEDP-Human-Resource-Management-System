@@ -96,13 +96,13 @@
                     </a>
                     <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Branche</a>
+                            <a href="../../App/Branches/branch.php" class="sidebar-link">Branch</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Department</a>
+                            <a href="../../App/Branches/department.php" class="sidebar-link">Department</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Job position</a>
+                            <a href="../../App/Branches/job_position.php" class="sidebar-link">Job position</a>
                         </li>
                     </ul>
                 </li>
@@ -144,6 +144,7 @@
                 </a>
             </div>
         </aside>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

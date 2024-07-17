@@ -1,6 +1,6 @@
 <?php
-$title='Scholar Request';
-$page='scholar request';
+$title='Department';
+$page='department';
 
 include('../../Core/Includes/header.php');
 
@@ -11,7 +11,7 @@ include('../../Core/Includes/header.php');
         ?>
         <div class="main p-3">
             <div class="container">
-                <h1>Scholarship Request</h1>
+                <h1>Departments</h1>
                 <hr>
                 <div class="row mb-3">
                     <div class="col-md-6">
@@ -34,9 +34,8 @@ include('../../Core/Includes/header.php');
                         <tr>
                             <th scope="col">ID</th>
                             <th scope="col">Name</th>
-                            <th scope="col">School</th>
                             <th scope="col">Contact No.</th>
-                            <th scope="col">Admission Date</th>
+                            <th scope="col">Branch Id.</th>
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
@@ -44,19 +43,18 @@ include('../../Core/Includes/header.php');
                         <tr>
                             <td>1</td>
                             <td>John Doe</td>
-                            <td>Example School</td>
                             <td>123-456-7890</td>
-                            <td>2024-07-17</td>
+                            <td>1</td>
                             <td class="table-actions horizontal-align">
                                 <button class="btn btn-link"><i class="fas fa-ellipsis-v"></i></button>
                             </td>
                         </tr>
+
                         <tr>
                             <td>2</td>
-                            <td>Jane Smith</td>
-                            <td>Another School</td>
-                            <td>987-654-3210</td>
-                            <td>2024-07-18</td>
+                            <td>John Doe</td>
+                            <td>123-456-7890</td>
+                            <td>4</td>
                             <td class="table-actions horizontal-align">
                                 <button class="btn btn-link"><i class="fas fa-ellipsis-v"></i></button>
                             </td>
