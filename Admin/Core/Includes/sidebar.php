@@ -70,13 +70,13 @@
                     <p>Human Resource MS</p>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="../../App/Employee/employee.php" class="sidebar-link">
                         <i class="lni lni-users"></i>
                         <span>Employee's</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="../../App/Employee/job_applicant.php" class="sidebar-link">
                         <i class="lni lni-search"></i>
                         <span>Job Applicants</span>
                     </a>
@@ -117,16 +117,16 @@
                     </a>
                     <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Scholars</a>
+                            <a href="../../App/Scholar/scholar.php" class="sidebar-link">Scholars</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Programs</a>
+                            <a href="../../App/Scholar/program.php" class="sidebar-link">Programs</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Compliance</a>
+                            <a href="../../App/Scholar/compliance.php" class="sidebar-link">Compliance</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Requests</a>
+                            <a href="../../App/Scholar/request.php" class="sidebar-link">Requests</a>
                         </li>
                     </ul>
                 </li>
@@ -144,13 +144,6 @@
                 </a>
             </div>
         </aside>
-        <div class="main p-3">
-            <div class="text-center">
-                <h1>
-                    Welcome to admin homepage
-                </h1>
-            </div>
-        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

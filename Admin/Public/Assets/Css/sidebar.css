@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
 }
-
 a {
     text-decoration: none;
 }
@@ -45,7 +44,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 #sidebar.expand {
     width: 260px;
     min-width: 260px;
