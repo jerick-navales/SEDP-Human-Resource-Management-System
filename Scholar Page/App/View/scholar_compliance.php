@@ -1,6 +1,6 @@
 <?php 
-$title = 'Dashboard';
-$page = 'dashboard';
+$title = 'Scholar Compliance';
+$page = 'compliance';
 include('../../Core/Includes/header.php'); 
 ?>
 

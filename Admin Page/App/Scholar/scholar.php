@@ -135,6 +135,7 @@ if (isset($_GET['delete_id']) && is_numeric($_GET['delete_id'])) {
     <div class="wrapper">
         <?php include("../../Core/Includes/sidebar.php"); ?>
         <div class="main p-3">
+            <h1></h1>
             <div class="container">
                 <h1>Scholarship Recipient</h1>
                 <hr>

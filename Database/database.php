@@ -32,20 +32,42 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];    
 
-    $stmt = $pdo->prepare("SELECT * FROM login WHERE username = :username AND password = :password");
+    // Determine the table based on username
+    $userType = '';
+    $stmt = $pdo->prepare("SELECT usertype FROM scholar_login WHERE username = :username AND password = :password");
     $stmt->execute(['username' => $username, 'password' => $password]);
-    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+    if ($stmt->rowCount() > 0) {
+        $userType = 'scholar';
+    } else {
+        $stmt = $pdo->prepare("SELECT usertype FROM employee_login WHERE username = :username AND password = :password");
+        $stmt->execute(['username' => $username, 'password' => $password]);
+        if ($stmt->rowCount() > 0) {
+            $userType = 'employee';
+        } else {
+            $stmt = $pdo->prepare("SELECT usertype FROM admin_login WHERE username = :username AND password = :password");
+            $stmt->execute(['username' => $username, 'password' => $password]);
+            if ($stmt->rowCount() > 0) {
+                $userType = 'admin';
+            }
+        }
+    }
 
-    if ($user) {
+    if ($userType) {
         $_SESSION["username"] = $username;
 
-        if ($user["usertype"] == "user") {
+        if ($userType == "scholar") {
             $_SESSION['login_success'] = "Welcome $username!";
-            $_SESSION['redirect_to'] = "./User/App/View/user_home.php";
+            $_SESSION['redirect_to'] = "./Scholar Page/App/View/scholar_home.php";
             header("Location: ./index.php");
-        } elseif ($user["usertype"] == "admin") {
+
+        } elseif ($userType == "employee") {
             $_SESSION['login_success'] = "Welcome $username!";
-            $_SESSION['redirect_to'] = "./Admin/App/View/admin_home.php";
+            $_SESSION['redirect_to'] = "./Employee Page/App/View/employee_home.php";
+            header("Location: ./index.php");
+
+        } elseif ($userType == "admin") {
+            $_SESSION['login_success'] = "Welcome $username!";
+            $_SESSION['redirect_to'] = "./Admin Page/App/View/admin_home.php";
             header("Location: ./index.php");
         }
     } else {
