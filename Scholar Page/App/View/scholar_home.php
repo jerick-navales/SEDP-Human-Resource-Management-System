@@ -24,7 +24,7 @@ include('../../Core/Includes/header.php');
                 <p class="text-secondary">welcome back</p>
             </div>
             <div class="line-graph">
-                line-graph
+                <h1 style="text-align: center;">Para ine sa Scholar ang Yawa</h1>
             </div>
         </div>
 
