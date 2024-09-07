@@ -9,12 +9,45 @@
 
     <link rel="shortcut icon" href="../../Public/Assets/Images/SEDPfavicon.png" type="image/x-icon">
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../../Public/Assets/Css/sidebar.css">
-
     <link rel="shortcut icon" href="../../Public/Images/SEDPfavicon.png" type="image/x-icon">
+
+  
+    <style>
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 300px;
+            text-align: center;
+        }
+
+        .modal-content h5 {
+            margin-bottom: 20px;
+        }
+
+        .modal-content button {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -103,7 +136,7 @@
                 </li>
             </ul>
             <div class="sidebar-footer">
-                <a href="../../../index.php" class="sidebar-link">
+                <a href="#" class="sidebar-link" onclick="showModal(event)">
                     <i class="lni lni-exit"></i>
                     <span>Logout</span>
                 </a>
@@ -111,30 +144,44 @@
         </aside>
     </div>
 
+    <div id="confirmationModal" class="modal-overlay">
+        <div class="modal-content">
+            <h5>Are you sure you want to logout?</h5>
+            <button class="btn btn-secondary" onclick="hideModal()">Cancel</button>
+            <a href="../../../index.php" class="btn btn-primary" id="confirmLogout">Logout</a>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
-    <!-- JavaScript to Maintain Sidebar State -->
+  
     <script>
         const hamBurger = document.querySelector(".toggle-btn");
         const sidebar = document.querySelector("#sidebar");
 
-        // Check if the sidebar state is stored in localStorage
         if (localStorage.getItem("sidebarState") === "expanded") {
             sidebar.classList.add("expand");
         }
 
-        // Toggle sidebar and save state in localStorage
         hamBurger.addEventListener("click", function () {
             sidebar.classList.toggle("expand");
 
-            // Save the current state of the sidebar in localStorage
             if (sidebar.classList.contains("expand")) {
                 localStorage.setItem("sidebarState", "expanded");
             } else {
                 localStorage.setItem("sidebarState", "collapsed");
             }
         });
+
+        function showModal(event) {
+            event.preventDefault(); 
+            document.getElementById('confirmationModal').style.display = 'block';
+        }
+
+        function hideModal() {
+            document.getElementById('confirmationModal').style.display = 'none';
+        }
     </script>
 </body>
 
