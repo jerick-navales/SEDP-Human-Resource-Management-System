@@ -10,8 +10,11 @@ include('../../Core/Includes/header.php');
             include("../../Core/Includes/sidebar.php");
         ?>
         <div class="main p-3">
-            <div class="container">
-                <h1>Scholar Program</h1>
+        <?php
+        include('../../Core/Includes/navBar.php');
+        ?>
+            <div class="container-fluid shadow-sm rounded">
+                <h1 class="fw-bold fs-3 mx-2">Scholar Program</h1>
                 <hr>
                 <div class="row mb-3">
                     <div class="col-md-6">

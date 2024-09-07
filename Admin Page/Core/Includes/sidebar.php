@@ -13,6 +13,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../../Public/Assets/Css/sidebar.css">
+
+    <link rel="shortcut icon" href="../../Public/Images/SEDPfavicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -20,7 +22,7 @@
         <aside id="sidebar">
             <div class="d-flex" id="sideheader">
                 <button class="toggle-btn" type="button">
-                <img class="logo" src="../../../Assets/Images/SEDPlogo.jpg" alt="">
+                    <img class="logo" src="../../../Assets/Images/SEDPlogo.jpg" alt="">
                 </button>
                 <div class="sidebar-logo">
                     <a href="#">SEDP HRMS</a>
@@ -28,7 +30,7 @@
             </div>
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="../../App/View/AdminDashboard.php" class="sidebar-link">
                         <i class="lni lni-dashboard"></i>
                         <span>Dashboard</span>
                     </a>
@@ -37,20 +39,19 @@
                     <p>Human Resource MS</p>
                 </li>
                 <li class="sidebar-item">
-                    <a href="../../App/Employee/employee.php" class="sidebar-link">
+                    <a href="../../App/View/EmployeeLandingPage.php" class="sidebar-link">
                         <i class="lni lni-users"></i>
                         <span>Employee's</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="../../App/Employee/job_applicant.php" class="sidebar-link">
+                    <a href="../../App/View/JobApplicants.php" class="sidebar-link">
                         <i class="lni lni-search"></i>
                         <span>Job Applicants</span>
                     </a>
                 </li>
-                
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="../../App/View/ReqcruitmentPage.php" class="sidebar-link">
                         <i class="lni lni-consulting"></i>
                         <span>Recruitment</span>
                     </a>
@@ -63,13 +64,10 @@
                     </a>
                     <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="../../App/Branches/branch.php" class="sidebar-link">Branch</a>
+                            <a href="../../App/Branches/Branches.php" class="sidebar-link">Branch</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="../../App/Branches/department.php" class="sidebar-link">Department</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="../../App/Branches/job_position.php" class="sidebar-link">Job position</a>
+                            <a href="../../App/Branches/Department.php" class="sidebar-link">Department</a>
                         </li>
                     </ul>
                 </li>
@@ -111,12 +109,33 @@
                 </a>
             </div>
         </aside>
-
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-    <script src="../../Public/Assets/Js/main.js"></script>
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- JavaScript to Maintain Sidebar State -->
+    <script>
+        const hamBurger = document.querySelector(".toggle-btn");
+        const sidebar = document.querySelector("#sidebar");
+
+        // Check if the sidebar state is stored in localStorage
+        if (localStorage.getItem("sidebarState") === "expanded") {
+            sidebar.classList.add("expand");
+        }
+
+        // Toggle sidebar and save state in localStorage
+        hamBurger.addEventListener("click", function () {
+            sidebar.classList.toggle("expand");
+
+            // Save the current state of the sidebar in localStorage
+            if (sidebar.classList.contains("expand")) {
+                localStorage.setItem("sidebarState", "expanded");
+            } else {
+                localStorage.setItem("sidebarState", "collapsed");
+            }
+        });
+    </script>
 </body>
 
 </html>

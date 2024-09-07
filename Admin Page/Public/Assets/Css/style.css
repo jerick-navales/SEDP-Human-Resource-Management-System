@@ -1,0 +1,106 @@
+body {
+    background-color: #f8f9fa; /* Light gray background for the body */
+}
+
+.container {
+    background-color: #ffffff; /* White background for the container */
+    padding: 20px; /* Padding around the container */
+    margin-top: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Vertical spacing between rows */
+}
+
+.table th, .table td {
+    padding: 10px 0; /* Padding for table cells */
+    vertical-align: middle; /* Center content vertically */
+    border-top: 1px solid #000; /* Black horizontal line */
+}
+
+.table thead {
+    background-color: #C2EEFF; /* Background color for table header */
+}
+
+.table-actions {
+    text-align: center; /* Center actions */
+}
+
+.table-actions .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 0.8rem; /* Smaller font size */
+    border: none; /* Remove button border */
+    background: none; /* Remove button background */
+}
+
+.vertical-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.search-sort-add {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Vertically align items */
+}
+
+.search-sort-add .form-control,
+.search-sort-add .form-select {
+    width: auto; /* Auto width */
+    border-radius: 50px; /* Rounded corners */
+    background-color: #e7e7e7d2; /* Very light gray background */
+}
+
+.search-sort-add .input-group {
+    width: 100%; /* Full width */
+    max-width: 300px; /* Maximum width for the search input */
+}
+
+.search-sort-add .input-group-text {
+    background-color: #e7e7e7d2; /* Match search input background */
+    border: none; /* Remove border */
+}
+.search-sort-add .input-group-text {
+    background-color: #e7e7e7d2; /* Match the background color of the search input */
+    border: none; /* Remove border */
+    border-radius: 50px 0 0 50px; /* Rounded corners on the left side */
+    margin-right: -1px;
+}
+
+.search-sort-add .form-control {
+    border-radius: 0 50px 50px 0; /* Rounded corners on the right side */
+    border: none; /* Remove border for a seamless appearance */
+
+}
+hr {
+    border-top: 1px solid #000; /* Black color for horizontal lines */
+}
+
+.text-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.text-end .btn {
+    margin-left: 10px;
+}
+
+.btn-info.edit {
+    background-color: #FFDD00; /* Background color for edit button */
+    border: none;
+}
+
+.arrow-icon {
+    font-size: 24px; /* Icon size */
+    vertical-align: middle; /* Align with text */
+    margin-right: 8px; /* Space between icon and text */
+}

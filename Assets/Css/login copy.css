@@ -1,0 +1,143 @@
+/* /Assets/Css/login.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+/* Adjust the container spacing */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 5%;  /* Add padding on left */
+    padding-right: 5%; /* Add padding on right */
+}
+
+/* Update the header background color */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f7070; /* Set the background color */
+    box-shadow: 10px 0 10px gray;
+    padding: 0 1.5rem;
+}
+
+.header ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.header ul li {
+    padding: 0.2rem 1.9rem;
+}
+
+.header ul li:nth-child(2) {
+    border: 1px solid #000;
+    border-radius: 2rem 0.5rem 0.5rem 2rem;
+}
+
+.header ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.title-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #343a40;
+    margin-right: 10%;
+}
+
+.login-form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-group {
+    border-radius: 50px !important;
+    overflow: hidden; /* Ensures the icon fits within the rounded container */
+}
+
+.input-group .toggle-password {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-left: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.input-group .toggle-password:hover {
+    color: #007bff;
+}
+
+.forgot-password {
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.btn-login {
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #007bff;
+    border: none;
+}
+
+.btn-login:hover {
+    background: #0056b3;
+}
+
+.admin-login-message {
+    display: none;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .admin-login-message {
+        display: block;
+    }
+}

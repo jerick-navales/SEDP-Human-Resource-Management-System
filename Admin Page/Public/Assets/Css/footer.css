@@ -1,0 +1,28 @@
+.footer {
+    background-color: #1A2B3C;
+    color: #fff;
+}
+
+.footer .line {
+    border: none;
+    height: 1px;
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+.footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer .footer-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer .footer-link:hover {
+    text-decoration: underline;
+}

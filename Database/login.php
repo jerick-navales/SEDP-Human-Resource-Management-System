@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             case "admin":
                 $_SESSION['login_success'] = "Welcome $username!";
-                $_SESSION['redirect_to'] = "./Admin Page/App/View/admin_home.php";
+                $_SESSION['redirect_to'] = "./Admin Page/App/View/AdminDashboard.php";
                 break;
         }
         header("Location: ./index.php");
