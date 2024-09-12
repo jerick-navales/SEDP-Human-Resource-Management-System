@@ -1,6 +1,6 @@
 <?php
-$title='Branch';
-$page='Branch';
+$title='Scholars';
+$page='scholar';
 
 include('../../Core/Includes/header.php');
 ?>

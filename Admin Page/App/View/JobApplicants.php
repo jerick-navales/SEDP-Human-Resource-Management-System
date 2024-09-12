@@ -1,5 +1,5 @@
 <?php
-$title="Job Applicants";
+$title="Job Applicants | SEDP HRMS";
 $page="jobapplicants";
 include('../../Core/Includes/header.php');
 ?>

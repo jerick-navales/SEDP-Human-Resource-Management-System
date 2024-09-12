@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login into the site | SEDP HRMS</title>
 
     <!-- Include Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
     <link rel="shortcut icon" href="./Assets/Images/SEDPfavicon.png" type="image/x-icon">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./Assets/Css/login copy.css">
+    <link rel="stylesheet" href="./Assets/Css/login page.css">
 </head>
 <body>
 <div class="header"> <!-- Light green header -->
@@ -32,12 +32,12 @@
     </ul>
 </div>
 
-<div class="container">
-    <div class="row align-items-center">
+<div class="container-fluid ">
+    <div class="row align-items-center" style="margin: 10rem 0 0 10rem;">
         <div class="col-md-6 text-start title-container">
-            <h1>SEDP <br> Human Resource Management</h1>
+            <h1>SEDP <br> Human Resource <br> Management</h1>
         </div>
-        <div class="col-md-6 login-form-container">
+        <div class="col-md-4 login-form-container" >
             <form action="index.php" method="POST" onsubmit="return checkScreenSize()">
                 <div class="form-group">
                     <label for="username">Username</label>

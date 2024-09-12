@@ -1,5 +1,5 @@
 <?php
-$title="Dashboard";
+$title="Dashboard | SEDP HRMS";
 $page="admindashboard";
 include('../../Core/Includes/header.php');
 ?>
@@ -43,7 +43,7 @@ include('../../Core/Includes/header.php');
                         <i class="lni lni-graduation"></i>
                             
                     </div>
-                    <a href="#" class="card-link m-2 text-end mt-0">view</a>
+                    <a href="./Scholar/scholar.php" class="card-link m-2 text-end mt-0">view</a>
                 </div>
             </div>
 
