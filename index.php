@@ -21,10 +21,10 @@
     <link rel="shortcut icon" href="./Assets/Images/SEDPfavicon.png" type="image/x-icon">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./Assets/Css/login page.css">
+    <link rel="stylesheet" href="Assets/Css/login.css">
 </head>
 <body>
-<div class="header"> <!-- Light green header -->
+<div class="header">
     <?php include('./Scholar Page/Core/Includes/svg.php'); ?>
     <ul>
         <li><a href="./Assets/Php/apply.php">Apply</a></li>
@@ -32,13 +32,13 @@
     </ul>
 </div>
 
-<div class="container-fluid ">
-    <div class="row align-items-center" style="margin: 10rem 0 0 10rem;">
+<div class="container-fluid">
+    <div class="row align-items-center" style="margin: 8rem 2rem 0 ;">
         <div class="col-md-6 text-start title-container">
             <h1>SEDP <br> Human Resource <br> Management</h1>
         </div>
-        <div class="col-md-4 login-form-container" >
-            <form action="index.php" method="POST" onsubmit="return checkScreenSize()">
+        <div class="col-md-5 login-form-container">
+            <form action="index.php" method="POST">
                 <div class="form-group">
                     <label for="username">Username</label>
                     <input type="text" class="form-control" name="username" id="username" required>
@@ -73,7 +73,13 @@
             title: 'Login Successful',
             text: '<?php echo $_SESSION['login_success']; ?>',
             showConfirmButton: false,
-            timer: 1500
+            timer: 1500,
+            background: '#003c3c',
+            color: '#fff',
+            iconColor: '#fff',
+            customClass: {
+                popup: 'colored-toast'
+            }
         }).then(function() {
             window.location.href = '<?php echo $_SESSION['redirect_to']; ?>';
         });
@@ -89,7 +95,14 @@
             title: 'Login Failed',
             text: '<?php echo $_SESSION['login_error']; ?>',
             showConfirmButton: true,
-            confirmButtonText: 'OK'
+            confirmButtonText: 'OK',
+            background: '#003c3c',
+            color: '#fff',
+            iconColor: '#fff',
+            confirmButtonColor: '#003c3c',
+            customClass: {
+                popup: 'colored-toast'
+            }
         });
         <?php unset($_SESSION['login_error']); ?>
     </script>

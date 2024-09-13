@@ -1,16 +1,18 @@
-*{
+/* General Styles */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding-left: 5%;  /* Add padding on left */
-    padding-right: 5%; /* Add padding on right */
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-/* Update the header background color */
+/* Header Styles */
 .header {
     position: fixed;
     top: 0;
@@ -20,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1f7070; /* Set the background color */
+    background-color: #003c3c;
     box-shadow: 10px 0 10px gray;
     padding: 0 1.5rem;
 }
@@ -46,6 +48,7 @@
     font-weight: 600;
 }
 
+/* Title Styles */
 .title-container h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -53,12 +56,17 @@
     margin-right: 10%;
 }
 
+/* Login Form Styles */
 .login-form-container {
     background: white;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
+    height: 50vh; /* Set a fixed height */
+    min-height: 400px; /* Ensure flexibility for smaller screens */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the form content vertically */
 }
 
 .form-group {
@@ -72,33 +80,47 @@
 }
 
 .form-control {
-    border-radius: 50px;
+    border-radius: 50px; /* Ensure consistency with the toggle icon */
     padding: 10px 20px;
     border: 1px solid #ced4da;
 }
 
 .form-control:focus {
-    border-color: #007bff;
+    border-color: #003c3c;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .input-group {
-    border-radius: 50px !important;
-    overflow: hidden; /* Ensures the icon fits within the rounded container */
+    position: relative; /* Ensure the toggle icon can be positioned absolutely */
 }
 
-.input-group .toggle-password {
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-left: 0;
-    cursor: pointer;
+.input-group .form-control-password {
+    border-radius: 50px !important; /* Add border-radius to the password field */
+}
+
+.input-group .input-group-append {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.input-group .input-group-text {
+    border: none; /* Remove the border */
     background-color: transparent;
+    cursor: pointer;
+    height: 100%;
+    padding: 0 24px;
 }
 
-.input-group .toggle-password:hover {
-    color: #007bff;
+.input-group .input-group-text i {
+    color: #003c3c;
+}
+
+.input-group .input-group-text:hover {
+    background-color: transparent; 
+    
 }
 
 .forgot-password {
@@ -115,12 +137,12 @@
     border-radius: 50px;
     padding: 10px 20px;
     font-size: 1rem;
-    background: #007bff;
+    background: #003c3c;
     border: none;
 }
 
 .btn-login:hover {
-    background: #0056b3;
+    background: #003c3c;
 }
 
 .admin-login-message {
@@ -130,8 +152,26 @@
     text-align: center;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
+    .title-container h1 {
+        font-size: 2rem;
+    }
+
+    .login-form-container {
+        padding: 30px;
+        height: auto; /* Allow height to adjust automatically */
+    }
+
     .admin-login-message {
         display: block;
+    }
+
+    .header ul li {
+        padding: 0.2rem 1rem;
+    }
+
+    .row {
+        margin: 5rem 0 0 2rem;
     }
 }
