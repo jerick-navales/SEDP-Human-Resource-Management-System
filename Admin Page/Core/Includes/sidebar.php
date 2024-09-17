@@ -90,6 +90,12 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
+                    <a href="../../App/View/ReqcruitmentPage.php" class="sidebar-link">
+                        <i class="bi bi-person-fill-dash"></i>
+                        <span>Past Member</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
                     <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
                         data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
                         <i class="lni lni-protection"></i>

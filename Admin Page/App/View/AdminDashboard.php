@@ -28,7 +28,7 @@ include('../../Core/Includes/header.php');
                             <i class="lni lni-users"></i>
                             
                     </div>
-                    <a href="EmployeeLandingPage.php" class="card-link m-2 text-end mt-0">view</a>
+                    <a href="EmployeeLandingPage.php" class="card-link m-2 text-end mt-0" style="color: #003c3c;">view</a>
                 </div>
             </div>
             
@@ -43,7 +43,7 @@ include('../../Core/Includes/header.php');
                         <i class="lni lni-graduation"></i>
                             
                     </div>
-                    <a href="./Scholar/scholar.php" class="card-link m-2 text-end mt-0">view</a>
+                    <a href="../Scholar/scholar.php" class="card-link m-2 text-end mt-0" style="color: #003c3c;">view</a>
                 </div>
             </div>
 
@@ -57,7 +57,7 @@ include('../../Core/Includes/header.php');
                             <i class="bi bi-person-lines-fill"></i>
                             
                     </div>
-                    <a href="#" class="card-link m-2 text-end mt-0">view</a>
+                    <a href="ReqcruitmentPage.php" class="card-link m-2 text-end mt-0" style="color: #003c3c;">view</a>
                 </div>
             </div>
 
@@ -71,7 +71,7 @@ include('../../Core/Includes/header.php');
                         <i class="bi bi-mortarboard-fill"></i>
                             
                     </div>
-                    <a href="#" class="card-link m-2 text-end mt-0">view</a>
+                    <a href="../Scholar/request.php" class="card-link m-2 text-end mt-0" style="color: #003c3c;">view</a>
                 </div>
             </div>
                 </div>
