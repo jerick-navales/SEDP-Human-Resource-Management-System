@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -17,10 +19,7 @@
     left: 0;
     right: 0;
     height: 4rem;
-    display: -webkit-flex; /* Safari */
-    display: -moz-flex; /* Firefox */
-    display: -ms-flexbox; /* IE 10 */
-    display: flex;
+    display: flex; /* Simplified flex display */
     justify-content: space-between;
     align-items: center;
     background-color: #034747;
@@ -29,46 +28,90 @@
     z-index: 1000;
 }
 
+/* Ensure list items are horizontally aligned and centered */
 .header ul {
-    display: -webkit-flex; /* Safari */
-    display: -moz-flex; /* Firefox */
-    display: -ms-flexbox; /* IE 10 */
     display: flex;
     gap: 1rem;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
+/* Align list items center vertically */
 .header ul li {
-    padding: 0.5rem 1.5rem;
+    display: flex;
+    align-items: center;
 }
-
+/* Default styles for list items */
 .header ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    display: block;
+    position: relative;
+    transition: color 0.4s ease, text-shadow 0.4s ease;
+}
+
+/* Hover effect for the second list item */
+.header ul li:nth-child(2) a {
+    position: relative;
+    overflow: hidden; /* Ensure the effect does not overflow */
+    border-bottom: 2px solid transparent;
+    padding: 4px 28px;
+}
+
+.header ul li:nth-child(2) a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #046363; /* Bright color for hover background */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.header ul li:nth-child(2) a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.header ul li:nth-child(2) a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glowing text effect */
+}
+
+.header ul li a :nth-child(2){
+    background-color: #004f4f;
+    padding: 3px 20px;
 }
 .login-background {
     position: relative;
     min-height: 100vh;
-    background-image: url('../Images/loginBg.jpg'); /* Replace with your image path */
+    background-image: url('../Images/loginBg.jpg'); 
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0; /* Remove any padding */
-    margin: 0; /* Remove any margin */
-    width: 100%; /* Ensure it spans the full width */
-    overflow: hidden; /* Prevent child elements from overflowing */
+    padding: 0;
+    margin: 0; 
+    width: 100%; 
+    overflow: hidden; 
 }
 
 /* Adjust container-fluid for better width handling */
 .container-fluid {
     position: relative;
     z-index: 2;
-    padding: 0 15px; /* Use a safe padding value */
-    max-width: 100%; /* Ensure it doesn't extend beyond the viewport */
-    box-sizing: border-box; /* Ensure padding is contained within the width */
+    padding: 0 15px;
+    max-width: 100%;
+    box-sizing: border-box; 
 }
 
 
@@ -98,9 +141,18 @@
 }
 
 .title-container h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #343a40;
+    font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0,
+    "SHRP" 0;
+  font-size: 3.5rem;
+  color: #fff;
+  letter-spacing: 4px;
+  
 }
 
 /* Login Form Styles */

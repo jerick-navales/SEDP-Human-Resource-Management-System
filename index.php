@@ -30,19 +30,20 @@ include('./Database/login.php');
 </head>
 <body>
     <div class="login-background">
-        <div class="header">
-            <?php include('./Scholar Page/Core/Includes/svg.php'); ?>
-            <ul>
-                <li><a href="./Assets/Php/apply.php">Apply</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </div>
+    <div class="header">
+    <?php include('./Scholar Page/Core/Includes/svg.php'); ?>
+    <ul>
+        <li><a href="./Assets/Php/apply.php">Apply</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</div>
+
 
         <div class="container-fluid mt-4" style="background: transparent;">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center title-container">
                     <img src="./Assets/Images/loginLogo.png" alt="Company Logo" style="width: 130px; padding: 2.5rem 0 0.50rem;">
-                    <h1 style="font-size: 3rem; color: #fff;">SEDP <br> Human Resource <br> Management</h1>
+                    <h1>SEDP <br> Human Resource <br> Management</h1>
                 </div>
                 <div class="col-md-5 login-form-container px-5 shadow-lg ">
                     <h3 class="text-center font-weight-bold mb-5 pt-3" style="color: #003c3c;">Sign in</h3>
