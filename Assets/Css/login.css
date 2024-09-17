@@ -47,12 +47,6 @@
     text-decoration: none;
     font-weight: 600;
 }
-/* Remove white space on the right */
-html, body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-/* Make sure the background container doesn't cause overflow */
 .login-background {
     position: relative;
     min-height: 100vh;
