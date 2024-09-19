@@ -17,6 +17,7 @@ include('../../../Database/db.php');
         <!--Cards-->
         <div class="section">
             <div class="container-fluid">
+<<<<<<< HEAD
                 <div class="row">
                     <!--Employee Card-->
                     <?php
@@ -38,6 +39,66 @@ include('../../../Database/db.php');
                     include('../Dashboard/ScholarApplicantCard.php');
                     ?>
 
+=======
+            <div class="row">
+                
+            <div class="col-sm-6 mb-3 col-lg-3 col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex align-items-center justify-content-between fw-bold fs-1 ">
+                        <div>
+                            <h6 class="card-title mb-1 fw-bold fs-4">Employees</h6>
+                            <p class="card-text fw-bold fs-1">23</p>
+                        </div>
+                            <i class="lni lni-users"></i>
+                            
+                    </div>
+                    <a href="EmployeeLandingPage.php" class="card-link m-2 text-end mt-0" style="color: #003c3c;">view</a>
+                </div>
+            </div>
+            
+
+            <div class="col-sm-6 mb-3 col-lg-3 col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex align-items-center justify-content-between fw-bold fs-1 ">
+                        <div>
+                            <h6 class="card-title mb-1 fw-bold fs-4">Scholars</h6>
+                            <p class="card-text fw-bold fs-1">15</p>
+                        </div>
+                        <i class="lni lni-graduation"></i>
+                            
+                    </div>
+                    <a href="../Scholar/scholar.php" class="card-link m-2 text-end mt-0" style="color: #003c3c;">view</a>
+                </div>
+            </div>
+
+            <div class="col-sm-6 mb-3 col-lg-3 col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex align-items-center justify-content-between fw-bold fs-1 ">
+                        <div>
+                            <h6 class="card-title mb-1 fw-bold fs-5">Job Applicants</h6>
+                            <p class="card-text fw-bold fs-1">13</p>
+                        </div>
+                            <i class="bi bi-person-lines-fill"></i>
+                            
+                    </div>
+                    <a href="ReqcruitmentPage.php" class="card-link m-2 text-end mt-0" style="color: #003c3c;">view</a>
+                </div>
+            </div>
+
+            <div class="col-sm-6 mb-3 col-lg-3 col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body d-flex align-items-center justify-content-between fw-bold fs-1 ">
+                        <div>
+                            <h6 class="card-title mb-1 fw-bold fs-5">Scholar Applicants</h6>
+                            <p class="card-text fw-bold fs-1">20</p>
+                        </div>
+                        <i class="bi bi-mortarboard-fill"></i>
+                            
+                    </div>
+                    <a href="../Scholar/request.php" class="card-link m-2 text-end mt-0" style="color: #003c3c;">view</a>
+                </div>
+            </div>
+>>>>>>> 6e4f438f31ec5fd85c1486c567b9c526f4b10d18
                 </div>
             </div>
         </div>

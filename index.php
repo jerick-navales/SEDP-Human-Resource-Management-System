@@ -29,6 +29,7 @@ include('./Database/login.php');
     <link rel="stylesheet" href="./Assets/Css/login.css">
     <link rel="stylesheet" href="./Assets/Css/sweetAlert.css">
 </head>
+<<<<<<< HEAD
 
 <body>
     <div class="login-background">
@@ -41,6 +42,18 @@ include('./Database/login.php');
             </ul>
         </div>
 
+=======
+<body>
+    <div class="login-background">
+    <div class="header">
+    <?php include('./Scholar Page/Core/Includes/svg.php'); ?>
+    <ul>
+        <li><a href="./Assets/Php/apply.php">Apply</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</div>
+
+>>>>>>> 6e4f438f31ec5fd85c1486c567b9c526f4b10d18
 
         <div class="container-fluid mt-4" style="background: transparent;">
             <div class="row align-items-center">
@@ -51,7 +64,11 @@ include('./Database/login.php');
                 <div class="col-md-5 login-form-container px-5 shadow-lg ">
                     <h3 class="text-center font-weight-bold mb-5 pt-3" style="color: #003c3c;">Sign in</h3>
                     <form action="index.php" method="POST">
+<<<<<<< HEAD
                         <div class="form-group mb-5">
+=======
+                        <div class="form-group mb-5" >
+>>>>>>> 6e4f438f31ec5fd85c1486c567b9c526f4b10d18
                             <input type="text" class="form-control" name="username" id="username" placeholder="Username" required>
                             <label for="username">Username</label>
                         </div>
@@ -86,9 +103,15 @@ include('./Database/login.php');
                 });
             });
         </script>
+<<<<<<< HEAD
         <?php
         unset($_SESSION['login_success']);
         unset($_SESSION['redirect_to']);
+=======
+        <?php 
+        unset($_SESSION['login_success']); 
+        unset($_SESSION['redirect_to']); 
+>>>>>>> 6e4f438f31ec5fd85c1486c567b9c526f4b10d18
         ?>
     <?php elseif (isset($_SESSION['login_error'])): ?>
         <script>
@@ -118,7 +141,11 @@ include('./Database/login.php');
         function togglePasswordVisibility() {
             const passwordInput = document.getElementById("password");
             const eyeIcon = document.getElementById("eye-icon");
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> 6e4f438f31ec5fd85c1486c567b9c526f4b10d18
             if (passwordInput.type === "password") {
                 passwordInput.type = "text";
                 eyeIcon.classList.remove("fa-eye");
