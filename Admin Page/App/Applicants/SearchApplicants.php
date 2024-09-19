@@ -18,7 +18,7 @@ include('../../Core/Includes/header.php');
             <hr>
             <div class="row">
                 <div class="col-4 ms-auto">
-                    <form action="../Applicants/SearchApplicants.php" method="GET">
+                    <form action="#" method="GET">
                         <div class="input-group mb-3 ">
                             <input type="text" name="search" value="" class="form-control" placeholder="Search Name Of Applicant">
                             <button type="submit" class="btn btn-primary">Search</button>
@@ -29,7 +29,7 @@ include('../../Core/Includes/header.php');
             <table class="table table-striped">
                 <thead class="table-primary">
                     <tr>
-                        <th>#</th>
+                        <th>ID</th>
                         <th>NAME</th>
                         <th>EMAIL</th>
                         <th>APPLIED DATE</th>
@@ -38,33 +38,40 @@ include('../../Core/Includes/header.php');
                 </thead>
                 <tbody>
                     <?php
-                    // connection
+                    // Connection
                     include("../../../Database/db.php");
-                    // read all rows from the database table
-                    $sql = "SELECT * FROM applicants";
+
+                    // Check if search term is set and not empty
+                    $search = isset($_GET['search']) ? $_GET['search'] : '';
+
+                    // Prepare SQL query
+                    if (!empty($search)) {
+                        $searchTerm = $connection->real_escape_string($search);
+                        $sql = "SELECT * FROM applicants WHERE name LIKE '%$searchTerm%' ORDER BY applicant_id ASC";
+                    } else {
+                        $sql = "SELECT * FROM applicants ORDER BY applicant_id ASC";
+                    }
+
                     $result = $connection->query($sql);
 
                     if (!$result) {
                         die("Invalid Query: " . $connection->error);
                     }
 
-                    // read data of each row
+                    // Read data of each row
                     while ($row = $result->fetch_assoc()) {
-                        // create a unique modal ID for each employee
                         echo "
-                    <tr>
-                        <td>$row[applicant_id]</td>
-                        <td>$row[name]</td>
-                        <td>$row[email]</td>
-                        <td>$row[applied_date]</td>
-                        <td>
-                            <a class='btn btn-warning btn-sm' href='#'><i class='bi bi-eye'></i></a>
-                            <a class='btn btn-danger btn-sm' href='../Applicants/DeleteApplicants.php?applicant_id=$row[applicant_id]'><i class='bi bi-trash'></i></a>
-                        </td>
-                    </tr>
-                    ";
+                        <tr>
+                            <td>{$row['applicant_id']}</td>
+                            <td>{$row['name']}</td>
+                            <td>{$row['email']}</td>
+                            <td>{$row['applied_date']}</td>
+                            <td>
+                                <a class='btn btn-danger btn-sm' href='./DeleteApplicants.php?applicant_id=$row[applicant_id]'><i class='bi bi-trash'></i></a>
+                            </td>
+                        </tr>
+                        ";
                     }
-
                     ?>
                 </tbody>
 

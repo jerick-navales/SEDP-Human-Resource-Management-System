@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
 ::after,
 ::before {
     box-sizing: border-box;
@@ -107,14 +106,14 @@ a.sidebar-link {
 
 a.sidebar-link:hover {
     background-color: rgba(255, 255, 255, .075);
-    border-left: 3px solid #8a73ff;
+    border-left: 3px solid #0d4432;
 }
 
 .sidebar-item {
     position: relative;
 }
 .sidebar-link p{
-    color: #214eff;
+    color: #122367;
     font-size: 0.9rem;
     margin-left: 15px;
     padding-top: 10px;
@@ -125,7 +124,7 @@ a.sidebar-link:hover {
     position: absolute;
     top: 0;
     left: 70px;
-    background-color: #28c3ea;
+    background-color: #0a3926;
     padding: 0;
     min-width: 15rem;
     display: none;

@@ -1,9 +1,10 @@
 <?php
-$title="Dashboard | SEDP HRMS";
-$page="admindashboard";
+$title = "Dashboard | SEDP HRMS";
+$page = "admindashboard";
 include('../../Core/Includes/header.php');
+include('../../../Database/db.php');
 ?>
-    <div class="wrapper">
+<div class="wrapper">
     <?php
     include_once('../../Core/Includes/sidebar.php');
     ?>
@@ -11,78 +12,41 @@ include('../../Core/Includes/header.php');
     <div class="main overflow-y-scroll">
         <!--header-->
         <?php
-            include('../../Core/Includes/navBar.php');
+        include('../../Core/Includes/navBar.php');
         ?>
         <!--Cards-->
         <div class="section">
             <div class="container-fluid">
-            <div class="row">
-                
-            <div class="col-sm-6 mb-3 col-lg-3 col-md-6">
-                <div class="card border-0 shadow-sm">
-                    <div class="card-body d-flex align-items-center justify-content-between fw-bold fs-1 ">
-                        <div>
-                            <h6 class="card-title mb-1 fw-bold fs-4">Employees</h6>
-                            <p class="card-text fw-bold fs-1">23</p>
-                        </div>
-                            <i class="lni lni-users"></i>
-                            
-                    </div>
-                    <a href="EmployeeLandingPage.php" class="card-link m-2 text-end mt-0">view</a>
-                </div>
-            </div>
-            
+                <div class="row">
+                    <!--Employee Card-->
+                    <?php
+                    include('../Dashboard/EmployeeCard.php');
+                    ?>
 
-            <div class="col-sm-6 mb-3 col-lg-3 col-md-6">
-                <div class="card border-0 shadow-sm">
-                    <div class="card-body d-flex align-items-center justify-content-between fw-bold fs-1 ">
-                        <div>
-                            <h6 class="card-title mb-1 fw-bold fs-4">Scholars</h6>
-                            <p class="card-text fw-bold fs-1">15</p>
-                        </div>
-                        <i class="lni lni-graduation"></i>
-                            
-                    </div>
-                    <a href="./Scholar/scholar.php" class="card-link m-2 text-end mt-0">view</a>
-                </div>
-            </div>
+                    <!--Scholar Card-->
+                    <?php
+                    include('../Dashboard/ScholarCard.php');
+                    ?>
 
-            <div class="col-sm-6 mb-3 col-lg-3 col-md-6">
-                <div class="card border-0 shadow-sm">
-                    <div class="card-body d-flex align-items-center justify-content-between fw-bold fs-1 ">
-                        <div>
-                            <h6 class="card-title mb-1 fw-bold fs-5">Job Applicants</h6>
-                            <p class="card-text fw-bold fs-1">13</p>
-                        </div>
-                            <i class="bi bi-person-lines-fill"></i>
-                            
-                    </div>
-                    <a href="#" class="card-link m-2 text-end mt-0">view</a>
-                </div>
-            </div>
+                    <!--Job Applicant Card-->
+                    <?php
+                    include('../Dashboard/JobApplicantCard.php');
+                    ?>
 
-            <div class="col-sm-6 mb-3 col-lg-3 col-md-6">
-                <div class="card border-0 shadow-sm">
-                    <div class="card-body d-flex align-items-center justify-content-between fw-bold fs-1 ">
-                        <div>
-                            <h6 class="card-title mb-1 fw-bold fs-5">Scholar Applicants</h6>
-                            <p class="card-text fw-bold fs-1">20</p>
-                        </div>
-                        <i class="bi bi-mortarboard-fill"></i>
-                            
-                    </div>
-                    <a href="#" class="card-link m-2 text-end mt-0">view</a>
-                </div>
-            </div>
+                    <!--Scholar Applicant Card-->
+                    <?php
+                    include('../Dashboard/ScholarApplicantCard.php');
+                    ?>
+
                 </div>
             </div>
         </div>
-        
-         <!--chart-->
-         <div class="section">
+
+        <!--chart-->
+        <div class="section">
             <div class="container-fluid">
-            <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 mb-3 overflow-hidden shadow-sm" style="border-radius: 5px;">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 mb-3 overflow-hidden shadow-md" style="border-radius: 5px;">
                         <div id="donutchart" style="width: 680px; height: 360px;"></div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 mb-3">
@@ -163,44 +127,47 @@ include('../../Core/Includes/header.php');
                     </div>
 
 
-            </div>
+                </div>
             </div>
 
-         </div>
+        </div>
 
 
 
     </div>
-    </div>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
+</div>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    google.charts.load("current", {
+        packages: ["corechart"]
+    });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
+            ['Task', 'Hours per Day'],
+            ['Work', 11],
+            ['Eat', 2],
+            ['Commute', 2],
+            ['Watch TV', 2],
+            ['Sleep', 7]
         ]);
 
         var options = {
-          title: 'My Daily Activities',
-          pieHole: 0.4,
+            title: 'My Daily Activities',
+            pieHole: 0.4,
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
         chart.draw(data, options);
-      }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-    <script src="../../Public/Assets/Js/AdminPage.js"></script>
-    <script src="../../Public/Assets/JssideBarScript.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+<script src="../../Public/Assets/Js/AdminPage.js"></script>
+<script src="../../Public/Assets/JssideBarScript.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 </body>
 
 </html>

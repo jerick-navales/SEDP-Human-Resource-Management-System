@@ -1,0 +1,16 @@
+.swal2-popup {
+    background-color: #003c3c !important;
+    color: #fff !important;
+}
+.swal2-title, .swal2-html-container, .swal2-confirm {
+    color: #fff !important;
+}
+.swal2-confirm {
+    background-color: #003c3c !important;
+}
+.swal2-popup .swal2-success-line, .swal2-popup .swal2-error-line {
+    background-color: #003c3c !important;
+}
+.swal2-popup .swal2-icon.swal2-success .swal2-success-ring {
+    border-color: #fff !important;
+}
