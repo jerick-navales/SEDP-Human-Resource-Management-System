@@ -13,7 +13,7 @@ include('../../Core/Includes/header.php');
         <?php
         include('../../Core/Includes/navBar.php');
         ?>
-        <!--Main Container-->
+        <!--Main Containers-->
         <div class="container-fluid shadow p-2 mb-5 bg-body-tertiary rounded-4">
             <h3 class="fw-bold fs-3">Program</h3>
             <hr style="padding-bottom: 1.5rem;">

@@ -1,9 +1,8 @@
-<?php 
+<?php
 $title = 'Dashboard';
 $page = 'dashboard';
-include('../../Core/Includes/header.php'); 
+include('../../Core/Includes/header.php');
 ?>
-
 <div class="container-fluid wrapper">
     <div class="row top-content">
         <div class="col-6 left-con">

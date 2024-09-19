@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         include('../../../../Database/db.php');
 
-        // Step 1: Delete the record with the specified recipient_id
+        // Step 1: Delete the records with the specified recipient_id
         $sql = "DELETE FROM recipient WHERE recipient_id = ?";
         $stmt = $connection->prepare($sql);
         $stmt->bind_param("i", $recipient_id);

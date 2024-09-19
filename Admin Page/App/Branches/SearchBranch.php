@@ -14,7 +14,7 @@
 
 <body>
     <div class="wrapper">
-        <!--sidebar-->
+        <!--sidebars-->
         <?php
         include_once('../../core/includes/sidebar.php');
         ?>

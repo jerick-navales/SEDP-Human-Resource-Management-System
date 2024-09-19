@@ -10,7 +10,6 @@ $location = "";
 
 $errorMessage = "";
 $successMessage = "";
-
 ?>
 
 <!DOCTYPE html>

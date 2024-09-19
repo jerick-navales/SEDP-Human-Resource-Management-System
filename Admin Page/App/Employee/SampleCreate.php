@@ -6,6 +6,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
+
             <form action="../Dao/Branch-db/CreateBranch_db.php" method="POST">
                 <div class="modal-body">
                     <div class="form-group mb-2">

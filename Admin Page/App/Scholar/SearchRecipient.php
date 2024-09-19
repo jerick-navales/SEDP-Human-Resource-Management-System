@@ -4,7 +4,6 @@ $title = 'Dashboard';
 $page = 'Recipient';
 
 include("../../../Database/db.php");
-
 ?>
 
 <!DOCTYPE html>

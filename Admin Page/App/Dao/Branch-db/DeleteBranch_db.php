@@ -3,7 +3,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST["branch_id"])) {
         $branch_id = $_POST["branch_id"];
 
-        // Connection
+        // Connections
         include("../../../../Database/db.php");
 
         // Step 1: Delete the record with the specified branch_id

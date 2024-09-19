@@ -22,7 +22,7 @@
 </div>
 
 <script>
-    // Function to set the branch_id in the modal before opening
+    // Function to set the branch_id in the modal before openings
     function setBranchIdForDelete(branchId) {
         document.getElementById('branch_id').value = branchId;
     }

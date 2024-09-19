@@ -4,7 +4,7 @@ $page = "admindashboard";
 include('../../Core/Includes/header.php');
 ?>
 <div class="wrapper">
-    <!--sidebar-->
+    <!--sidebars-->
     <?php
     include('../../Core/Includes/sidebar.php');
 

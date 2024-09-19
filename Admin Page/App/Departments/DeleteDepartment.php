@@ -20,7 +20,6 @@
         </div>
     </div>
 </div>
-
 <script>
     // Function to set the department_id in the modal before opening
     function setDepartmentIdForDelete(departmentId) {

@@ -17,7 +17,7 @@
                         <input type="text" class="form-control" name="location" value="<?php echo htmlspecialchars($location); ?>" required>
                     </div>
 
-                    <!-- Error message -->
+                    <!-- Error messages -->
                     <?php if (!empty($errorMessage)) { ?>
                         <div class='alert alert-danger'>
                             <strong><?php echo htmlspecialchars($errorMessage); ?></strong>

@@ -10,7 +10,7 @@ include('../../../Database/db.php');
     ?>
 
     <div class="main overflow-y-scroll">
-        <!--header-->
+        <!--headers-->
         <?php
         include('../../Core/Includes/navBar.php');
         ?>

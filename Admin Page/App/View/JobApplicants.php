@@ -8,7 +8,7 @@ include('../../Core/Includes/header.php');
     <?php
     include_once('../../Core/Includes/sidebar.php');
     ?>
-    <!--add employee-->
+    <!--add employees-->
     <main class="main">
         <?php
         include '../../Core/Includes/navbar.php';

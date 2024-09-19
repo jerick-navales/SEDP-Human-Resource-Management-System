@@ -12,7 +12,7 @@
                     $row = $result->fetch_assoc();
                     $applicant_count = $row['applicant_count']; // Fetching the count
                 } else {
-                    $applicant_count = 0; // Default if there's an error
+                    $applicant_count = 0;
                 }
 
                 // Display the employee count

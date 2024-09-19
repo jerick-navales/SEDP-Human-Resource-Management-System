@@ -14,7 +14,6 @@
                 } else {
                     $scholar_count = 0; // Default if there's an error
                 }
-
                 // Display the employee count
                 echo '<p class="card-text fw-bold fs-1 mx-3">' . $scholar_count . '</p>';
                 ?>

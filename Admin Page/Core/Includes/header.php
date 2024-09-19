@@ -21,9 +21,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <script src="../../JS/script.js"></script>
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../../Assets/Css/adminSidebar.css">
     <link rel="stylesheet" href="../../public/assets/css/AdminStyle.css">
@@ -33,12 +33,11 @@
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    
+
     <!-- Include external Bootstrap links -->
     <?php include('../../Core/includes/bootstrap-links.php'); ?>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 
 <body>

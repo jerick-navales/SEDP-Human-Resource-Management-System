@@ -58,7 +58,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             $errorMessage = "Invalid query: " . $connection->error;
             break;
         }
-
         $successMessage = "scholar Updated Succefuly!";
 
         header("location:../View/ScholarApplicant.php");

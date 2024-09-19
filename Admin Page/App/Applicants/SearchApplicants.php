@@ -4,7 +4,7 @@ $page = "jobapplicants";
 include('../../Core/Includes/header.php');
 ?>
 <div class="wrapper">
-    <!--sidebar-->
+    <!--sidebars-->
     <?php
     include_once('../../Core/Includes/sidebar.php');
     ?>

@@ -8,7 +8,7 @@ $errorMessage = "";
 $successMessage = "";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Sanitize input
+    // Sanitize inputs
     $name = isset($_POST['name']) ? htmlspecialchars(trim($_POST['name'])) : '';
 
     // Check if the department name already exists

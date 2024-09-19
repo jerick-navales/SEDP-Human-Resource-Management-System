@@ -1,5 +1,6 @@
 <?php
-class Database {
+class Database
+{
     private $host = 'localhost';
     private $db_name = 'human resource management system';
     private $username = 'root';
@@ -7,7 +8,8 @@ class Database {
     private $charset = 'utf8mb4';
     public $pdo;
 
-    public function connect() {
+    public function connect()
+    {
         $this->pdo = null;
 
         try {
@@ -24,4 +26,3 @@ class Database {
 
 $database = new Database();
 $pdo = $database->connect();
-?>

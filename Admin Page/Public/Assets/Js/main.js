@@ -16,4 +16,5 @@ hamBurger.addEventListener("click", function () {
   } else {
     localStorage.setItem("sidebarState", "collapsed");
   }
+  
 });

@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1>Comming Soon</h1>
+    <h1>Comming Soons</h1>
 </body>
 
 </html>

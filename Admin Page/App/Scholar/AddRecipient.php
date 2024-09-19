@@ -14,7 +14,6 @@
                             <div class="form-group mb-2">
                                 <label class="col-sm-6 col-form-label">Name</label>
                                 <input type="text" class="form-control" name="name" value="<?php echo $name; ?>">
-
                             </div>
                             <div class="form-group mb-2">
                                 <label class="col-sm-6 col-form-label">Email</label>

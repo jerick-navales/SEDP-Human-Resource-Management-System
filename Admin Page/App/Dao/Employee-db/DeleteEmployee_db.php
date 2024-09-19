@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         include('../../../../Database/db.php');
 
-        // Step 1: Delete the record with the specified employee_id
+        // Step 1 Delete the record with the specified employee_id
         $sql = "DELETE FROM employees WHERE employee_id = ?";
         $stmt = $connection->prepare($sql);
         $stmt->bind_param("i", $employee_id);

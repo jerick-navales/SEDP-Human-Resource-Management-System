@@ -6,7 +6,6 @@ $username = "";
 $email = "";
 $department = "";
 
-
 $errorMessage = "";
 $successMessage = "";
 

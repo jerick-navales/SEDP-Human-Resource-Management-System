@@ -3,7 +3,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST["department_id"])) {
         $department_id = $_POST["department_id"];
 
-        // Connection
+        // Connections
         include("../../../../Database/db.php");
 
         // Step 1: Delete the record with the specified department_id

@@ -122,7 +122,6 @@ include('../../Core/Includes/header.php');
         </main>
     </div>
 </div>
-
 <?php
 include('../../../Assets/Js/bootstrap.js')
 ?>

@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
     $recipient_id = $_GET["recipient_id"];
 
-    //read the row of the selected data
+    //read the row of the selected datas
     $sql = "SELECT * FROM `recipient` WHERE recipient_id = $recipient_id";
     $result = $connection->query($sql);
     $row = $result->fetch_assoc();

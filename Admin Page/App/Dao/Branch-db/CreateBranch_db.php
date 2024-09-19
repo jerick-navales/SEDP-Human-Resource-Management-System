@@ -1,5 +1,5 @@
 <?php
-//connection
+//connections
 include("../../../../Database/db.php");
 
 $name = "";

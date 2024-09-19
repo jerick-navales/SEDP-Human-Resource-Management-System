@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $salary = $_POST['salary'] ?? '';
     $EmployeeType = $_POST['EmployeeType'] ?? '';
 
-    // Validate required fields
+    // Validate required field
     if (empty($title) || empty($JobDescription) || empty($qualification) || empty($location) || empty($salary) || empty($EmployeeType)) {
         $errorMessage = "All fields are required";
     } else {

@@ -2,7 +2,7 @@
 if (isset($_GET["applicant_id"])) {
     $applicant_id = $_GET["applicant_id"];
 
-    // Connection
+    // Connections
     include("../../../Database/db.php");
 
     // Step 1: Delete the record with the specified applicant_id

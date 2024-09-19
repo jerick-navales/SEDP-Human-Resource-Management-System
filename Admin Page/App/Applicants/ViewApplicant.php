@@ -30,7 +30,7 @@ include("../../../Database/db.php");
         include_once('../../core/includes/sidebar.php');
         ?>
 
-        <!--add employee-->
+        <!--add employees-->
         <main class="main">
             <!--header-->
             <?php

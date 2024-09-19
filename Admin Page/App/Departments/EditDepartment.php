@@ -13,7 +13,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         header("location:../View/Department.php");
         exit;
     }
-
     // Get the department_id from URL
     $department_id = $_GET["department_id"];
 

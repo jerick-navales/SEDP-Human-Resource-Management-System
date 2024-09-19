@@ -22,7 +22,7 @@
 </div>
 
 <script>
-    // Function to set the Recipient_id in the modal before opening
+    // Function to set the Recipient_id in the modal before openings
     function setRecipientIdForDelete(recipientId) {
         document.getElementById('recipient_id').value = recipientId;
     }

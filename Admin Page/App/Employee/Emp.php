@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
     $cpassword = password_hash($_POST['cpassword'], PASSWORD_DEFAULT);
     $role = $_POST['role'];
 
-    // Check if user exists
+    // Check if user exist
     $select = "SELECT * FROM employees WHERE email = '$email' AND ContactNumber = '$ContactNumber' AND department = '$department'";
     $result = mysqli_query($connection, $select);
 

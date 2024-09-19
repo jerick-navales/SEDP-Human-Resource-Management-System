@@ -2,7 +2,7 @@
 // Connection
 include("../../../../Database/db.php");
 
-// Initialize variables to avoid "root" issue in input fields
+// Initialize variables to avoid "root" issue in input field
 $username = "";
 $email = "";
 $ContactNumber = "";

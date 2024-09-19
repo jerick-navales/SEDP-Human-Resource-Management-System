@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="../../Public/Assets/Css/sidebar.css">
     <link rel="shortcut icon" href="../../Public/Images/SEDPfavicon.png" type="image/x-icon">
 
-
     <style>
         .modal-overlay {
             display: none;

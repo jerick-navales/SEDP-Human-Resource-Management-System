@@ -12,7 +12,7 @@
                     $row = $result->fetch_assoc();
                     $employee_count = $row['employee_count']; // Fetching the count
                 } else {
-                    $employee_count = 0; // Default if there's an error
+                    $employee_count = 0;
                 }
 
                 // Display the employee count

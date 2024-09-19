@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if ($stmt->affected_rows > 0) {
             // Renumber IDs after deletion
-            // Step 2: Set a session variable to renumber the IDs
+            // Step 2: Set a session variable to renumber the ID
             $sql_reorder = "SET @new_id = 0";
             $connection->query($sql_reorder);
 

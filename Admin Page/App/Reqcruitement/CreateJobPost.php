@@ -6,6 +6,7 @@
                         <h1 class="modal-title fs-5" id="staticBackdropLabel">Post Job</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+
                     <form method="post">
                         <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
                             <div class="form-group mb-3">
@@ -37,6 +38,7 @@
                                 </select>
                             </div>
                         </div>
+
                         <div class="modal-footer">
                             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
                             <button type="submit" class="btn btn-primary">Post</button>

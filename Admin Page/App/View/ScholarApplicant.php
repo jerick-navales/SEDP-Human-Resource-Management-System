@@ -13,7 +13,6 @@ $GradeLevel = "";
 
 $errorMessage = "";
 $successMessage = "";
-
 ?>
 
 <!DOCTYPE html>

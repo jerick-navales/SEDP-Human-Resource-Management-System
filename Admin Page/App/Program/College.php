@@ -13,9 +13,7 @@ $password = "";
 
 $errorMessage = "";
 $successMessage = "";
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">

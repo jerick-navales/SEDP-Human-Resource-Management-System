@@ -2,18 +2,16 @@
 session_start();
 
 
-if(!isset($_SESSION["username"]))
-{
-	header("location:../../index.php");
+if (!isset($_SESSION["username"])) {
+    header("location:../../index.php");
 }
-
 
 ?>
 
-<?php 
+<?php
 $title = 'Home';
 $page = 'home';
-include('../../Core/Includes/header.php'); 
+include('../../Core/Includes/header.php');
 ?>
 
 <div class="container-fluid wrapper">
@@ -52,5 +50,3 @@ include('../../Core/Includes/header.php');
 </div>
 
 <?php include('../../Core/Includes/footer.php'); ?>
-
-

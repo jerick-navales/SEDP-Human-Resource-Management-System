@@ -31,7 +31,7 @@
       filter: brightness(0.5);
     }
   </style>
-  <!--Nav-->
+  <!--Navs-->
   <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-gradient bg-opacity-75">
     <div class="container d-flex mb-1">
       <a class="navbar-brand text-white align-text-center fw-bolder fs-3" href="#">

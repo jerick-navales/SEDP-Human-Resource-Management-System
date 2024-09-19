@@ -1,5 +1,5 @@
 <?php
-// Connection
+// Connections
 include("../../../Database/db.php");
 $branch_id = "";
 $name = "";

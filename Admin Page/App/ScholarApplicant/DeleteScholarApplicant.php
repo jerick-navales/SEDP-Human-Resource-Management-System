@@ -6,9 +6,11 @@
                 <h5 class="modal-title" id="deleteModalLabel">Confirm Delete</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+
             <div class="modal-body">
                 Are you sure you want to delete this Applicant?
             </div>
+
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                 <form id="deleteForm" method="POST" action="../Dao/ScholarApplicant-db/DeleteScholarApplicant-db.php">

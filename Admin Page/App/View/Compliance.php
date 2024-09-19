@@ -7,8 +7,8 @@ include('../../Core/Includes/header.php');
 <div class="wrapper">
     <?php
     include("../../Core/Includes/sidebar.php");
-
     ?>
+
     <div class="main p-3">
         <?php
         include('../../Core/Includes/navBar.php');
