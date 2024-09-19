@@ -17,7 +17,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     var_dump($username, $password);
 
     // Function to perform case-sensitive search
-    function findUserType($pdo, $username, $password, $table) {
+    function findUserType($pdo, $username, $password, $table)
+    {
         $stmt = $pdo->prepare("SELECT usertype FROM $table WHERE username = BINARY :username AND password = BINARY :password");
         $stmt->execute(['username' => $username, 'password' => $password]);
         return $stmt->fetchColumn();
@@ -34,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    // Debugging: check the determined userType
+    // Debugging: check the determined userTypes
     var_dump($userType);
 
     if ($userType) {
@@ -63,4 +64,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     exit();
 }
-?>

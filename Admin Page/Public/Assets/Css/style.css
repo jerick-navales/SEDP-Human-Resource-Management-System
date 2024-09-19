@@ -16,7 +16,7 @@ body {
 }
 
 .table th, .table td {
-    padding: 10px 0; /* Padding for table cells */
+    padding: 10px 0;
     vertical-align: middle; /* Center content vertically */
     border-top: 1px solid #000; /* Black horizontal line */
 }

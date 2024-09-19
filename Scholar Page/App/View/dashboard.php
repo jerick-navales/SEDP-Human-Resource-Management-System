@@ -1,7 +1,7 @@
-<?php 
+<?php
 $title = 'Dashboard';
 $page = 'dashboard';
-include('../../Core/Includes/header.php'); 
+include('../../Core/Includes/header.php');
 ?>
 
 <div class="container-fluid wrapper">
@@ -15,6 +15,7 @@ include('../../Core/Includes/header.php');
                 line-graph
             </div>
         </div>
+
 
         <div class="col-6 right-con">
             <div class="admin-container">

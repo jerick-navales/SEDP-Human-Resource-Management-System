@@ -14,11 +14,10 @@
                 <i class="fas fa-calendar-alt me-2" style="font-size: 1.3rem; color: #003c3c;"></i> <!-- Calendar Icon -->
                 <span id="currentDate" class="fs-6 fw-bold" style="color: #003c3c;"></span> <!-- Date -->
             </div>
-
             <!-- Profile Image -->
             <a href="#" class="ms-2">
                 <img src="../../public/assets/images/profile.jpg" style="height: 40px;" class="rounded-circle" alt="profile">
-            </a>  
+            </a>
         </div>
     </nav>
 </div>
@@ -26,6 +25,10 @@
 <script>
     // JavaScript to dynamically display the current date
     const date = new Date();
-    const options = { month: 'long', day: 'numeric', year: 'numeric' };
+    const options = {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric'
+    };
     document.getElementById('currentDate').innerText = date.toLocaleDateString(undefined, options);
 </script>

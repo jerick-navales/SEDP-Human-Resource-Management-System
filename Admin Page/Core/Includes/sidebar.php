@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="../../Public/Assets/Css/sidebar.css">
     <link rel="shortcut icon" href="../../Public/Images/SEDPfavicon.png" type="image/x-icon">
 
-  
     <style>
         .modal-overlay {
             display: none;
@@ -72,7 +71,7 @@
                     <p>Human Resource MS</p>
                 </li>
                 <li class="sidebar-item">
-                    <a href="../../App/View/EmployeeLandingPage.php" class="sidebar-link">
+                    <a href="../../App/View/Employee.php" class="sidebar-link">
                         <i class="lni lni-users"></i>
                         <span>Employee's</span>
                     </a>
@@ -103,10 +102,10 @@
                     </a>
                     <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="../../App/Branches/Branches.php" class="sidebar-link">Branch</a>
+                            <a href="../../App/View/Branch.php" class="sidebar-link">Branch</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="../../App/Branches/Department.php" class="sidebar-link">Department</a>
+                            <a href="../../App/View/Department.php" class="sidebar-link">Department</a>
                         </li>
                     </ul>
                 </li>
@@ -121,16 +120,16 @@
                     </a>
                     <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="../../App/Scholar/scholar.php" class="sidebar-link">Scholars</a>
+                            <a href="../../App/View/recipients.php" class="sidebar-link">Scholars</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="../../App/Scholar/program.php" class="sidebar-link">Programs</a>
+                            <a href="../../App/View/Program.php" class="sidebar-link">Programs</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="../../App/Scholar/compliance.php" class="sidebar-link">Compliance</a>
+                            <a href="../../App/View/Compliance.php" class="sidebar-link">Compliance</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="../../App/Scholar/request.php" class="sidebar-link">Requests</a>
+                            <a href="#" class="sidebar-link">Requests</a>
                         </li>
                     </ul>
                 </li>
@@ -161,7 +160,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
-  
+
     <script>
         const hamBurger = document.querySelector(".toggle-btn");
         const sidebar = document.querySelector("#sidebar");
@@ -170,7 +169,7 @@
             sidebar.classList.add("expand");
         }
 
-        hamBurger.addEventListener("click", function () {
+        hamBurger.addEventListener("click", function() {
             sidebar.classList.toggle("expand");
 
             if (sidebar.classList.contains("expand")) {
@@ -181,7 +180,7 @@
         });
 
         function showModal(event) {
-            event.preventDefault(); 
+            event.preventDefault();
             document.getElementById('confirmationModal').style.display = 'block';
         }
 

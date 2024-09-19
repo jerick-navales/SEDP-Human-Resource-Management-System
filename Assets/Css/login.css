@@ -22,7 +22,7 @@
     display: flex; /* Simplified flex display */
     justify-content: space-between;
     align-items: center;
-    background-color: #034747;
+    background-color: rgba(3, 71, 71, 0.7);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 0 1.5rem;
     z-index: 1000;
@@ -56,7 +56,7 @@
 /* Hover effect for the second list item */
 .header ul li:nth-child(2) a {
     position: relative;
-    overflow: hidden; /* Ensure the effect does not overflow */
+    overflow: hidden; 
     border-bottom: 2px solid transparent;
     padding: 4px 28px;
 }
@@ -68,7 +68,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #046363; /* Bright color for hover background */
+    background: rgb(3, 71, 71);
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.4s ease;
@@ -83,7 +83,6 @@
 
 .header ul li:nth-child(2) a:hover {
     color: #fff;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glowing text effect */
 }
 
 .header ul li a :nth-child(2){
@@ -122,7 +121,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, #000000 0%, #011313 50%, #011515 100%);
+    background: linear-gradient(to bottom, #000000 0%, #011111 50%, #011515 100%);
     opacity: 0.7;
     z-index: 1;
 }
@@ -173,7 +172,7 @@
     width: 100%;
     padding: 1rem 1.5rem;
     border-radius: 25px;
-    border: 1px solid #ced4da;
+    border: 2px solid #ced4da;
     outline: none;
     transition: all 0.3s ease;
     margin: 0.5rem 0;

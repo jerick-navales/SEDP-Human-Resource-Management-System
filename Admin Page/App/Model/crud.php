@@ -71,5 +71,5 @@ if ($action == 'add') {
     echo json_encode(['status' => 'success']);
 }
 
+
 $conn->close();
-?>
